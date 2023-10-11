@@ -202,5 +202,13 @@ minimum_element = sorted_list[0]
 
 print("Minimum element in the list is:", minimum_element)
 
+"""or"""
+def find_min_element(list1):
+  return list1[0]
+list1 = [1, 5, 10, 15, 20]
+min_element = find_min_element(list1)
+print(min_element)
+
+
 #9
 

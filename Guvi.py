@@ -237,4 +237,20 @@ def find_sublist_with_sum_zero(list1):
 list1 = [4, 2, -3, 1, 6]
 result = find_sublist_with_sum_zero(list1)
 print(result)
+ #or
+
+def has_sublist_with_zero_sum(nums):
+    prefix_sum = 0
+    seen_sums = set()
+    for num in nums:
+        prefix_sum += num
+        if prefix_sum == 0 or prefix_sum in seen_sums:
+            return True
+        seen_sums.add(prefix_sum)
+    return False
+my_list = [4, 2, -3, 1, 6]
+if has_sublist_with_zero_sum(my_list):
+    print("Yes, there is a sublist with a sum equal to zero.")
+else:
+    print("No, there is no sublist with a sum equal to zero.")
 

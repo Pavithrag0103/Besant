@@ -211,4 +211,16 @@ print(min_element)
 
 
 #9
+numbers = [10, 20, 30, 9]
+target_sum = 59
+
+# Find triplets with given sum
+triplets = [(a, b, c) for a in numbers for b in numbers for c in numbers if a + b + c == target_sum and a != b and b != c and a != c]
+
+# Print the result
+if triplets:
+    print("Triplets with sum", target_sum, "are:")
+    print(triplets)
+else:
+    print("No triplets found with the given sum.")
 

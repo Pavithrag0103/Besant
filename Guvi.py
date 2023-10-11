@@ -224,3 +224,17 @@ if triplets:
 else:
     print("No triplets found with the given sum.")
 
+#10
+def find_sublist_with_sum_zero(list1):
+  cumulative_sums = set()
+  current_sum = 0
+  for element in list1:
+    current_sum += element
+    if current_sum == 0 or current_sum in cumulative_sums:
+      return True
+    cumulative_sums.add(current_sum)
+  return False
+list1 = [4, 2, -3, 1, 6]
+result = find_sublist_with_sum_zero(list1)
+print(result)
+

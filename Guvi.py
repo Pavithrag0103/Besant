@@ -194,8 +194,13 @@ first_non_repeating_number = first_non_repeating_number(list1)
 print(first_non_repeating_number)
 
 #8
-def find_max_element(list1):
-  return list1[-1]
-list1 = [1, 5, 10, 15, 20]
-max_element = find_max_element(list1)
-print(max_element)
+# Sorted list (ascending order)
+sorted_list = [1, 3, 5, 7, 9, 11, 13]
+
+# Find the minimum element (first element in the sorted list)
+minimum_element = sorted_list[0]
+
+print("Minimum element in the list is:", minimum_element)
+
+#9
+

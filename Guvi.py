@@ -185,11 +185,17 @@ print(result)
 def first_non_repeating_number(list1):
   seen = set()
   for number in list1:
-    if number not in seen:
       return number
-    seen.add(number)
+  seen.add(number)
   return -1
 
 list1 = [1, 2, 3, 4, 5, 1, 2, 3]
 first_non_repeating_number = first_non_repeating_number(list1)
 print(first_non_repeating_number)
+
+#8
+def find_max_element(list1):
+  return list1[-1]
+list1 = [1, 5, 10, 15, 20]
+max_element = find_max_element(list1)
+print(max_element)

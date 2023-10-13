@@ -248,9 +248,16 @@ def has_sublist_with_zero_sum(nums):
             return True
         seen_sums.add(prefix_sum)
     return False
-my_list = [4, 2, -3, 1, 6]
+my_list = [4,-4]
 if has_sublist_with_zero_sum(my_list):
     print("Yes, there is a sublist with a sum equal to zero.")
 else:
     print("No, there is no sublist with a sum equal to zero.")
+
+
+
+print("cd".partition("cd"))
+
+
+
 

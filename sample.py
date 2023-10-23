@@ -6,21 +6,21 @@ while count<3:
     if number%2==0:
         print("Even")
     else:
-        print("Odd")"""
+        print("Odd")
 
 #max num
 
-"""num1=int(input("enter num1: "))
+num1=int(input("enter num1: "))
 num2=int(input("enter num2: "))
 if num1>num2:
     print(f'The maximun num is : {num1}')
 else:
     print(f'The maximun num is : {num2}')
-"""
+
 
 #prime num check
 
-"""def prime(num):
+def prime(num):
     if num<1:
         print("Not valid")
     for i in range(2,num):
@@ -31,23 +31,23 @@ num=int(input("enter num: "))
 if prime(num):
     print(f'{num} is prime')
 else:
-    print(f'{num} is not prime')"""
+    print(f'{num} is not prime')
 
 
 #Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
 
-"""def find(num):
+def find(num):
         for q in num:
             i=[]
             if q%2==0:
                 i.append(q)
                 print(q)
 
-find(range(1000,3001))    """
+find(range(1000,3001))
 
 
 #Question:
-"""Question:
+Question:
 Write a program that accepts a sentence and calculate the number of letters and digits.
 Suppose the following input is supplied to the program:
 hello world! 123
@@ -60,7 +60,7 @@ DIGITS 3   """
     print(len(digits))
 
 cal("hello world","123")
-"""
+
 
 
 rows = 20
@@ -73,7 +73,7 @@ for i in range(1, rows + 1):
         print(j, end=" ")
 
     # Print a new line at the end of each row
-    print()
+    print()  """
 
 # w3 resources - online python practise
 
@@ -87,7 +87,7 @@ for i in range(1, rows + 1):
 * * * * 
 * * * 
 * * 
-*     """
+*     
 
 rows=6
 for i in range(rows+1):     # 1 2 3 4 5 6
@@ -97,7 +97,7 @@ for i in range(rows+1):     # 1 2 3 4 5 6
 for i in range(rows-1,0,-1):   #5 4 3 2
     for j in range(1,i):    # (1,5) (1,4) (1,3) (1,2)
         print("*",end=" ")
-    print()
+    print()      """
 
 
 
@@ -112,7 +112,7 @@ Expected Output:
 666666
 7777777
 88888888
-999999999"""
+999999999
 
 
 
@@ -120,7 +120,7 @@ row=9
 for i in range(1,row+1):  # 1 2 3 4 5 6 7 8 9
     for j in range(0,i):    # (0,1) (0,2) (0,3).....
         print(i,end=" ")
-    print()      # helps to move the next line after printing the num
+    print()     """  # helps to move the next line after printing the num
 
 """Write a Python program to create the multiplication table (from 1 to 10) of a number.
 Expected Output:
@@ -137,9 +137,9 @@ Input a number: 6
 6 x 9 = 54                                                              
 6 x 10 = 60 """
 
-num=int(input("enter a num: "))
+"""num=int(input("enter a num: "))
 for i in range(1,11):
-    print(f"{num} x {i} = {num*i}")
+    print(f"{num} x {i} = {num*i}") """
 
 """Write a Python program to find the median of three values.
 Expected Output:
@@ -166,16 +166,30 @@ else:
     else:
         median = c
 
-print("The median is", median)"""
+print("The median is", median)
 
 import datetime
 time=datetime.datetime.now()
 print(time)
 
-"""Write a Python program to sum two integers. However, if the sum is between 15 and 20 it will return 20"""
-num1=int(input("enter num1: "))
+#Write a Python program to sum two integers. However, if the sum is between 15 and 20 it will return 20"""
+"""num1=int(input("enter num1: "))
 num2=int(input("enter num2: "))
 num3=num1+num2
 if num3>=15 and num<=20:
     print
 
+#PRIME
+for num in range(100,201):
+    if all(num%i!=0 for i in range(2,num)):
+        print(num)"""
+
+"""facobonnic """
+
+g=["madam","radar","python","string"]
+for i in g:
+    x= i[::-1]  # Reverse the string
+    if x == i:
+       print(i, "is a palindrome")
+    else:
+        print(i, "not a palindrome")

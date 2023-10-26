@@ -184,7 +184,12 @@ for num in range(100,201):
     if all(num%i!=0 for i in range(2,num)):
         print(num)"""
 
-"""facobonnic """
+for num in range(100,201):
+    for i in range(2, num):
+        if num%i!=0:
+            print(num)
+
+"""pallindrome """
 
 g=["madam","radar","python","string"]
 for i in g:
@@ -193,3 +198,16 @@ for i in g:
        print(i, "is a palindrome")
     else:
         print(i, "not a palindrome")
+
+k=[2,1,0,3,0,2,1,1]
+print(k.count(k.index(1)))
+
+
+ch=input("enter a char: ")
+
+if ch>='A' and ch<='Z':
+    char=ch.lower()
+    print(f'uppercase is {ch} and the lowercase for that is {char}')
+else:
+    x=ch.upper()
+    print(f'lowercase is {ch} and the uppercase is {x}')

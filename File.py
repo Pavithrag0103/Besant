@@ -27,7 +27,7 @@ print(f'How many attempts {count}') """
  The user first has to input their names and then, will be asked to guess any alphabet. 
  If the random word contains that alphabet, it will be shown as the output(with correct placement) 
  else the program will ask you to guess another alphabet. 
- The user will be given 12 turns(which can be changed accordingly) to guess the complete word."""
+ The user will be given 12 turns(which can be changed accordingly) to guess the complete word.
 
 import random
 
@@ -42,7 +42,8 @@ while True:
     if x==List[0]:
         print(len(x))
 
-print(f'Total Attempts: {count}')
+print(f'Total Attempts: {count}')"""
+
 
 
 
